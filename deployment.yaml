@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: my-cv
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: my-cv
+  template:
+    metadata:
+      labels:
+        app: my-cv
+    spec:
+      containers:
+      - name: my-cv
+        image: your-docker-username/my_cv:latest
+        ports:
+        - containerPort: 80
