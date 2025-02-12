@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: my-cv
-        image: your-docker-username/my_cv:latest
+        image: talakalo/my_cv:latest
         ports:
         - containerPort: 80
